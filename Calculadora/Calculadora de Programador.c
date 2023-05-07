@@ -18,7 +18,7 @@ float multiplicacao(float a, float b) {
 
 float divisao(float a, float b) {
     if (b == 0) {
-        printf("Erro: Divis√£o por zero.\n");
+        printf("Erro: Divis„o por zero.\n");
         exit(1);
     }
     return a / b;
@@ -26,7 +26,7 @@ float divisao(float a, float b) {
 
 void converter_base(long num, int base) {
     if (base < 2 || base > 16) {
-        printf("Erro: Base inv√°lida.\n");
+        printf("Erro: Base inv·lida.\n");
         exit(1);
     }
 
@@ -46,12 +46,12 @@ int main() {
     int base;
 
     printf("Calculadora\n");
-    printf("1. Adi√ß√£o\n");
-    printf("2. Subtra√ß√£o\n");
-    printf("3. Multiplica√ß√£o\n");
-    printf("4. Divis√£o\n");
+    printf("1. AdiÁ„o\n");
+    printf("2. SubtraÁ„o\n");
+    printf("3. MultiplicaÁ„o\n");
+    printf("4. Divis„o\n");
     printf("5. Converter para base\n");
-    printf("Escolha uma op√ß√£o: ");
+    printf("Escolha uma opÁ„o: ");
     scanf("%d", &opcao);
 
     switch (opcao) {
@@ -59,17 +59,17 @@ int main() {
         case 2:
         case 3:
         case 4:
-            printf("Digite dois n√∫meros: ");
+            printf("Digite dois n˙meros: ");
             scanf("%f %f", &a, &b);
             break;
         case 5:
-            printf("Digite um n√∫mero inteiro: ");
+            printf("Digite um n˙mero inteiro: ");
             scanf("%ld", &num);
             printf("Digite a base de destino (2-16): ");
             scanf("%d", &base);
             break;
         default:
-            printf("Op√ß√£o inv√°lida.\n");
+            printf("OpÁ„o inv·lida.\n");
             exit(1);
     }
 
