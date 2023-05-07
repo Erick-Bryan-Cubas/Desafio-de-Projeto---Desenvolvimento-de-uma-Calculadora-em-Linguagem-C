@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include <locale.h>
+#include <windows.h>
 
 float adicao(float a, float b) {
     return a + b;
@@ -34,6 +36,10 @@ void converter_base(long num, int base) {
 }
 
 int main() {
+    
+    setlocale(LC_ALL, "");
+    SetConsoleTitle("Calculadora de Programador");
+
     int opcao;
     float a, b;
     long num;
