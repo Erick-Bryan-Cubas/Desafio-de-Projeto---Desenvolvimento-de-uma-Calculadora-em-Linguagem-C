@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1683508027 source:c:\users\thecu\Área de trabalho\calculadora\resource.rc
+	<windows.h>
+	<commctrl.h>
+	<richedit.h>
+	"resource.h"
+
+1683508027 c:\users\thecu\Área de trabalho\calculadora\resource.h
+
